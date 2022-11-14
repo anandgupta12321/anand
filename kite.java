@@ -1,52 +1,43 @@
-
 class parent
 {
 int x=12;
-int y=98;
-public void display()
+String y="huwtg";
+public parent()
 {
-System.out.println("the first value is"+x);
-System.out.println("the first value of String is" +y );
+System.out.println("the first value is" +x);
+System.out.println("the second value is" +y);
 }
 }
 class anand1 extends parent
 {
-public void display()
+public anand1()
 {
-int z=y;
+int z=565;
 int t=45;
-
-System.out.println("the value of charecter is"+z );
-System.out.println("the first value integer is"+t );
+System.out.println("the first character is" +z);
+System.out.println("the second character is" +y);
 }
 }
-class anand2 extends parent
+class anand2 extends anand1
 {
-public void display()
+public anand2()
 {
-int h=43;
-System.out.println("the first value of String is"+h);
+int h =43;
+System.out.println("the first value of string is" +h);
 }
 }
-class anand3 extends parent
+class anand3 extends anand2
 {
-public void display()
+public anand3()
 {
 int c=34;
-System.out.println("the first value integer is"+c);
+System.out.println("the first value integer is" +c);
 }
 }
 class kite
 {
 public static void main(String [] args)
 {
-parent ob;
-ob=new anand1();
-ob.display();
-ob=new anand2();
-ob.display();
-ob=new anand3();
-ob.display();
+parent ob= new anand3();
 }
-} 
-
+}
